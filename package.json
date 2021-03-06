@@ -1,6 +1,6 @@
 {
   "name": "open-source-template-2021",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "main": "dist/node-lib/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
