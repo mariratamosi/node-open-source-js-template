@@ -121,6 +121,6 @@ class DateTimeHelperObj {
   };
 }
 
-export const DateTimeHelper = (() => {
+export const dateTimeHelper = (() => {
   return new DateTimeHelperObj();
 })();

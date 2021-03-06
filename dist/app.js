@@ -50,7 +50,7 @@ Object.keys(_dateTimeHelper).forEach(function (key) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.DateTimeHelper = void 0;
+exports.dateTimeHelper = void 0;
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -182,11 +182,11 @@ var DateTimeHelperObj = function DateTimeHelperObj() {
   });
 };
 
-var DateTimeHelper = function () {
+var dateTimeHelper = function () {
   return new DateTimeHelperObj();
 }();
 
-exports.DateTimeHelper = DateTimeHelper;
+exports.dateTimeHelper = dateTimeHelper;
 
 },{}],3:[function(require,module,exports){
 "use strict";

@@ -1,10 +1,7 @@
 const { src, dest, series } = require("gulp");
 
 const babel = require("gulp-babel");
-const plumber = require("gulp-plumber");
 const mocha = require("gulp-mocha");
-var sourcemaps = require("gulp-sourcemaps");
-var concat = require("gulp-concat");
 
 var gulp = require("gulp");
 
