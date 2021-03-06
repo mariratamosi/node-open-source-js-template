@@ -12,16 +12,6 @@ var source = require("vinyl-source-stream");
 var browserify = require("browserify");
 const babelify = require("babelify");
 
-gulp.task("build", function () {
-  return gulp
-    .src("src/main/app.js")
-    .pipe(sourcemaps.init())
-    .pipe(babel())
-    .pipe(concat("app.js"))
-    .pipe(sourcemaps.write("."))
-    .pipe(gulp.dest("dist/node-lib"));
-});
-
 gulp.task("test", function () {
   return gulp.src("src/test/**/*.js", { read: false }).pipe(
     mocha({
@@ -40,7 +30,7 @@ gulp.task("browserify", async () => {
     .bundle()
     .on("error", (err) => console.log(err))
     .pipe(source("app.js"))
-    .pipe(gulp.dest("dist/web-lib"));
+    .pipe(gulp.dest("dist"));
 });
 
-exports.default = gulp.series("test", "build", "browserify");
+exports.default = gulp.series("test", "browserify");
