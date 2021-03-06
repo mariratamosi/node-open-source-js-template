@@ -1,0 +1,32 @@
+{
+  "name": "open-source-template",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rongrazzo@gmail.com <rongrazzo@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/polyfill": "7.12.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.12.10",
+    "@babel/core": "7.12.10",
+    "@babel/plugin-proposal-class-properties": "7.12.1",
+    "@babel/preset-env": "7.12.11",
+    "@babel/register": "7.12.10",
+    "babelify": "10.0.0",
+    "browserify": "17.0.0",
+    "chai": "4.2.0",
+    "gulp": "^4.0.0",
+    "gulp-babel": "8.0.0",
+    "gulp-concat": "2.6.1",
+    "gulp-mocha": "7.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sourcemaps": "3.0.0",
+    "mocha": "8.2.1",
+    "vinyl-source-stream": "2.0.0"
+  }
+}
