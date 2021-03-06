@@ -19,7 +19,7 @@ gulp.task("build", function () {
     .pipe(babel())
     .pipe(concat("app.js"))
     .pipe(sourcemaps.write("."))
-    .pipe(gulp.dest("dist-for-node"));
+    .pipe(gulp.dest("dist/node-lib"));
 });
 
 gulp.task("test", function () {
@@ -39,8 +39,8 @@ gulp.task("browserify", async () => {
     .transform(babelify.configure({ presets: ["@babel/env"] }))
     .bundle()
     .on("error", (err) => console.log(err))
-    .pipe(source("out.js"))
-    .pipe(gulp.dest("./dist-for-lib"));
+    .pipe(source("app.js"))
+    .pipe(gulp.dest("dist/web-lib"));
 });
 
 exports.default = gulp.series("test", "build", "browserify");

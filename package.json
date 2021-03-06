@@ -1,8 +1,7 @@
 {
-  "name": "open-source-template",
-  "version": "0.0.2",
-  "description": "",
-  "main": "app.js",
+  "name": "open-source-template-2021",
+  "version": "0.0.3",
+  "main": "node-lib/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -28,5 +27,17 @@
     "gulp-sourcemaps": "3.0.0",
     "mocha": "8.2.1",
     "vinyl-source-stream": "2.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariratamosi/node-open-source-js-template.git"
+  },
+  "keywords": [
+    "open-source-template"
+  ],
+  "bugs": {
+    "url": "https://github.com/mariratamosi/node-open-source-js-template/issues"
+  },
+  "homepage": "https://github.com/mariratamosi/node-open-source-js-template#readme",
+  "description": ""
 }
