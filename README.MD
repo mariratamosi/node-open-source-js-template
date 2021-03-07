@@ -1,7 +1,8 @@
-##External js library
+## External js library
+
 With private repository in git, by publishing to NPM, we will be able to use the js library in web browser and in node js project.
 
-## ###How to create
+### How to create
 
 1. run `npm init` in project directory
 
@@ -9,7 +10,7 @@ With private repository in git, by publishing to NPM, we will be able to use the
 
 2. Add below dependencies in _package.json_.
 
-````javascript
+```javascript
 "dependencies": {
 		"@babel/polyfill": "7.12.1"
 	  },
@@ -33,26 +34,27 @@ With private repository in git, by publishing to NPM, we will be able to use the
 	  }
 ```
 
-3. Run ```npm install```
-4. Run ```npm install -g gulp```
+3. Run `npm install`
+4. Run `npm install -g gulp`
 
-	We will use gulp as our task runner, so it needs to be installed globally.
+   We will use gulp as our task runner, so it needs to be installed globally.
 
-5. Add the src - ``main`` and `test`.
-6. Add *gulpfile.js* - write the **test - build - browserify scripts**.
+5. Add the src - `main` and `test`.
+6. Add _gulpfile.js_ - write the **test - build - browserify scripts**.
 7. Run `gulp`
-	Output will be in the directory defined in `gulpfile.js`
+   Output will be in the directory defined in `gulpfile.js`
 
+### Add GIT
 
-###Add GIT
 ---
+
 ```
 git init
 git remote add origin origin-url
 ```
 
-###Build and publish
----
+## ###Build and publish
+
 ```
 gulp
 git add .
@@ -63,8 +65,12 @@ git push --tags
 npm publish
 ```
 
-###USAGE
+### USAGE
+
 `https://www.unpkg.com/pckgname@version/path-to-output-dir`
 
-###End
-````
+### End
+
+```
+
+```
