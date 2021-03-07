@@ -1,6 +1,5 @@
 const { src, dest, series } = require("gulp");
 
-const babel = require("gulp-babel");
 const mocha = require("gulp-mocha");
 
 var gulp = require("gulp");
