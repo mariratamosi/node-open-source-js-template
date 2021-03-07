@@ -180,6 +180,10 @@ var DateTimeHelperObj = function DateTimeHelperObj() {
     if (min <= 1) minString = "Min";else minString = "Mins";
     return hour + " " + hourString + " " + min + " " + minString;
   });
+
+  _defineProperty(this, "sayHello", function () {
+    return "Hello ALL!";
+  });
 };
 
 var dateTimeHelper = function () {

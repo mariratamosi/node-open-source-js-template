@@ -119,6 +119,10 @@ class DateTimeHelperObj {
 
     return hour + " " + hourString + " " + min + " " + minString;
   };
+
+  sayHello = () => {
+    return "Hello ALL!";
+  };
 }
 
 export const dateTimeHelper = (() => {
